@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Работа с && (и) и || (или)</title>
+</head>
+<body>
+<script>
+    //12.1
+	let a = 7;
+    if (a > 0 && a < 5)
+        alert('Верно');
+    else
+        alert('Неверно');
+
+    //12.2
+	a = 2;
+    if (a == 0 || a == 2)
+        a += 7;
+    else
+        a /= 10;
+    alert(a);
+
+    //12.3
+    a = 3, b = 5;
+    if (a <= 1 && b >= 3)
+        alert(a + b);
+    else
+        alert(b - a);
+
+    //12.4
+	a = 5, b = 3;
+    if ((a > 2 && a < 11) || (b >= 6 && b < 14))
+        alert('Верно');
+    else
+        alert('Неверно');
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Объекты (ассоциативные массивы)</title>
+</head>
+<body>
+<script>
+    let obj = {a: 1, b: 2, c: 3};
+    alert(obj['c']);
+    alert(obj.c);
+
+    let obj = {Коля: '1000', Вася: '500', Петя: '200'};
+    alert('Зарплата Пети ' + obj.Петя);
+    alert('Зарплата Коли ' + obj.Коля);
+
+    let obj = {1: 'Понедельник', 2: 'Вторник', 3: 'Среда', 4: 'Четверг', 5: 'Пятница', 6: 'Суббота', 7: 'Воскресенье'};
+    alert(obj["2"]);
+
+    let day = 3;
+    alert(obj[day]);
+</script>
+</body>
+</html>
