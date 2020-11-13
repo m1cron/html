@@ -9,19 +9,18 @@
     let arr = [[1, 2, 3],
 			   [4, 5, 6],
 			   [7, 8, 9]];
-    alert(arr[1][0]);
+    var out = (arr[1][0] + '\n\n');
 
     let obj = {js: ['jQuery', 'Angular'], php: 'hello', css: "world"};
-    alert(obj.js[0]);
+    out += (obj.js[0] + '\n\n');
 
     let myArr = {ru: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'], 
 				en: ['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun']};
-    alert(myArr.ru[0]);
-    alert(myArr.en[2]);
+	out +=(myArr.ru[0] + '\n\n' + myArr.en[2] + '\n\n');
 
     let lang = 'ru';
     let day = 7;
-    alert(myArr[lang][day - 1]);
+    alert(out + myArr[lang][day - 1]);
 </script>
 </body>
 </html>

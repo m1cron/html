@@ -6,31 +6,32 @@
 </head>
 <body>
 <script>
+	var out = '';
     let test = true;
     // let test = false;
 
     //11.1
     if (test) //short
-        alert('Верно');
+        out +=('Верно\n');
     else
-        alert('Неверно');
+		out +=('Неверно\n');
 
-    if (test === true) //long
-        alert('Верно');
+    if (test === true)
+		out +=('Верно\n');
     else
-        alert('Неверно');
+		out +=('Неверно\n');
 
     //11.2
-    if (!test) //short
-        alert('Верно');
+    if (!test)
+		out +=('Верно\n');
     else
-        alert('Неверно');
+		out +=('Неверно\n');
 
-    if (test === false) //long
-        alert('Верно');
+    if (test === false)
+		out +=('Верно\n');
     else
-        alert('Неверно');
-
+		out +=('Неверно\n');
+	alert(out);
 </script>
 </body>
 </html>

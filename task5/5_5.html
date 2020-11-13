@@ -9,20 +9,19 @@
     let secInHour = 60 * 60;
     let secInDay = secInHour * 24;
     let secInMonth = secInDay * 30;
-    alert('Секунд в часе: ' + secInHour);
-    alert('Секунд в сутках: ' + secInDay);
-    alert('Секунд в месяце: ' + secInMonth);
+    var out = ('Секунд в часе: ' + secInHour +
+	'\nСекунд в сутках: ' + secInDay +
+    '\nСекунд в месяце: ' + secInMonth);
 
     let date = new Date();
     let currentHour = date.getHours();
     let currentMinutes = date.getMinutes();
     let currentSeconds = date.getSeconds();
-    alert('Текущее время: ' + currentHour + ':' + currentMinutes + ':' + currentSeconds)
+    out += ('\n\nТекущее время: ' + currentHour + ':' + currentMinutes + ':' + currentSeconds)
 
     let num = 100;
     num *= num;
-    alert(num);
-
+    alert(out + '\n\n' + num);
 </script>
 </body>
 </html>

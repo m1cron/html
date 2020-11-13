@@ -6,34 +6,37 @@
 </head>
 <body>
 <script>
+	var out = '';
     //12.1
 	let a = 7;
     if (a > 0 && a < 5)
-        alert('Верно');
+		out += ('Верно\n');
     else
-        alert('Неверно');
+		out += ('Неверно\n');
 
     //12.2
 	a = 2;
     if (a == 0 || a == 2)
         a += 7;
-    else
+    else {
         a /= 10;
-    alert(a);
+		out += (a);
+	}
 
     //12.3
     a = 3, b = 5;
     if (a <= 1 && b >= 3)
-        alert(a + b);
+		out += ((a + b) + '\n');
     else
-        alert(b - a);
+		out += ((b - a) + '\n');
 
     //12.4
 	a = 5, b = 3;
     if ((a > 2 && a < 11) || (b >= 6 && b < 14))
-        alert('Верно');
+		out += ('Верно\n');
     else
-        alert('Неверно');
+		out += ('Неверно\n');
+	alert(out);
 </script>
 </body>
 </html>

@@ -6,21 +6,22 @@
 </head>
 <body>
 <script>
+	var out;
     // 1st task
     let str = 'Привет, Мир!';
-    alert(str);
+    out = (str);
 
     // 2nd task
-    let str1 = 'Привет, ', str2 = 'Мир!';
-    alert(str1 + str2);
+    let str1 = '\nПривет, ', str2 = 'Мир!';
+    out += (str1 + str2);
 
     // 3rd task
-    let name = 'Оля';
-    alert('Привет, ' + name + '!');
+    let name = 'Максим';
+    out += ('\nПривет, ' + name + '!');
 
     // 4th task
-    let age = 20;
-    alert('Мне ' + age + ' лет!')
+    let age = 19;
+    alert(out + '\nМне ' + age + ' лет!')
 </script>
 </body>
 </html>
