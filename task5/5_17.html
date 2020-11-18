@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//17.1
+		var arr = [2, 5, 9, 15, 0, 4];
+		for (var i = 0; i <= arr.length - 1; i++) {
+			if (arr[i] > 3 && arr[i] < 10) {
+					alert(arr[i]);
+			}
+		}
+		//17.2
+		var sum = 0;
+		var arr = [-2, 5, -9, -15, 0, 4];
+		for (var i = 0; i <= arr.length - 1; i++) {
+			if (arr[i] > 0) {
+				sum = sum + arr[i];
+			}
+		}
+			alert(sum);
+		//17.3
+		var arr = [1, 2, 5, 9, 4, 13, 4, 10];
+		for (var i = 0; i <= arr.length - 1; i++) {
+			if (arr[i] === 4) {
+				break;
+			} else {
+				alert('Есть')
+			}
+		}
+		//17.4
+		var arr = ['10', '20', '30', '50', '235', '3000'];
+		for (var i = 0; i <= arr.length - 1; i++) {
+			if (arr[i][0] == '1' || arr[i][0] == '2' || arr[i][0] == '5') {
+				alert(arr[i]);
+			}
+		}
+		//17.5
+		for (var i = 0; i <= arr.length - 1; i++) {
+		{
+			document.write('-' + arr[i]);
+		}
+		//17.6
+		var arr = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'];
+		for (var i = 0; i < arr.length; i++) {
+			if (i == 5 || i == 6) {
+				document.write('<b>' + arr[i] + '</b>' + ' ');
+			} else {
+				document.write(arr[i] + ' ');
+			}
+		}
+		//17.7
+		var arr = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'];
+		var day = 'Среда';
+
+		for (var i = 0; i <=arr.length -1; i++) {
+			if (i == 2) {
+				document.write('<i>' + day + '</i>' + ' ');
+			} else {
+				document.write(arr[i] + ' ')
+			}
+		}
+		//17.8
+		var n = 1000;
+		num = 0;
+		while (n >= 50 && n <= 1000) {
+			document.write(n + ' ');
+			n = n / 2;
+			num++
+		}
+		alert(n);
+		alert(num);
+	}
+	</script>
+</body>
+</html>		
