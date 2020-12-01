@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//9.1
+		var str = 'я учу javascript!'
+		document.write(str.length + "<br>");
+		//9.2
+		var str = 'я учу javascript!';
+		document.write(str.substr(2, 3) +" ");
+		document.write(str.substring(2, 5)+ " ");
+		document.write(str.slice(2, 5) + "<br>");
+		//9.3
+		var str = 'я учу javascript!';
+		document.write(str.indexOf('учу') + "<br>");
+		//9.4
+		var str = 'я учу javascript!';
+		var n = 10;
+
+		if (str.length > n) {
+			var result = str.slice(0, 10);
+			document.write(result + '...')
+		} else if (str.length < n) {
+			var result = str;
+			document.write(result)
+		}
+	</script>
+</body>
+</html>
