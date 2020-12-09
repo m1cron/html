@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		#slider{
+			width: 384px;
+			height: 128px;
+			
+			margin:50px auto;
+			overflow: hidden;
+		}
+		#polosa{
+			
+			width: 896px;
+			position: relative;
+			transition: all ease 1s;
+			left: 0;
+
+		}
+		#polosa img{
+			float: left;
+
+		}
+		#polosa::after{
+
+			content: "";
+			display: block;
+			clear: both;
+		}
+		#slider-left{
+			position: absolute;
+			right: 730px;
+			height: 128px;
+			top:50px;
+			background: transparent;
+			border: none;
+			background: grey;
+			border-radius: 10px;
+			outline: none;
+		}
+		#slider-right{
+			border-radius: 10px;
+			position: absolute;
+			right: 1170px;
+			height: 128px;
+			top:50px;
+			background: transparent;
+			border: none;
+			background: grey;
+			outline: none;
+		}
+		#slider-right:hover{
+			background: radial-gradient(ellipse at bottom, #87e0fd 0%,#01262b 55%);
+		}
+		#slider-left:hover{
+			background: radial-gradient(ellipse at bottom, #87e0fd 0%,#01262b 55%);
+		}
+	</style>
+</head>
+<body>
+	<div class="c">
+		<div id="slider">
+			<div id="polosa">
+				<img src="av1.png" alt="">
+				<img src="av2.png" alt="">
+				<img src="av3.png" alt="">
+				<img src="av4.png" alt="">
+				<img src="av3.png" alt="">
+				<img src="av4.png" alt="">
+				<img src="av1.png" alt="">
+			</div>
+			<button id="slider-right"></button>
+			<button id="slider-left"></button>
+			
+		</div>
+		
+		
+	</div>
+
+	<script type="text/javascript">
+		var left = 0;
+		document.getElementById('slider-left').onclick = sliderLeft;
+		function sliderLeft(){
+			var polosa = document.getElementById("polosa");
+			left -=128;
+			if(left <-512)
+			{
+				left=0;
+			}
+			polosa.style.left = left+'px';
+		}
+		document.getElementById('slider-right').onclick = sliderRight;
+		function sliderRight(){
+			var polosa = document.getElementById("polosa");
+			left +=128;
+			if(left >0){
+								left=-512;
+			}
+			polosa.style.left = left+'px';
+		}
+	</script>
+</body>
+</html>
