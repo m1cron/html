@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	 <style>
+   .container-app {
+  width: 900px;
+  margin: 0 auto;
+  border: 2px solid gray;
+
+}
+
+li span:hover {
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+  </style>
+</head>
+<body>
+<div class="container-app">
+  <ul class="tree" id="tree">
+    <li>Животные
+      <ul>
+        <li>Млекопитающие
+          <ul>
+            <li>Коровы</li>
+            <li>Ослы</li>
+            <li>Собаки</li>
+            <li>Тигры</li>
+          </ul>
+        </li>
+        <li>Другие
+          <ul>
+            <li>Змеи</li>
+            <li>Птицы</li>
+            <li>Ящерицы</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>Рыбы
+      <ul>
+        <li>Аквариумные
+          <ul>
+            <li>Гуппи</li>
+            <li>Скалярии</li>
+          </ul>
+        </li>
+        <li>Морские
+          <ul>
+            <li>Морская форель</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+  <script type="text/javascript">
+  	let li = document.querySelectorAll('li');
+
+li.forEach( item => {
+  console.log(item.firstChild);
+  let span = document.createElement('span');
+  span.append(item.firstChild);
+  item.prepend(span);
+});
+
+let span = document.querySelectorAll('span');
+
+tree.onclick = function(event) {
+  let target = event.target || event.srcElement;
+
+  if (target.nodeName === 'SPAN') {
+
+    let parent = target.parentElement;
+    if (!parent.querySelector('ul')) return;
+
+    if (parent.querySelector('ul').children.length)
+    parent.querySelector('ul').hidden = !parent.querySelector('ul').hidden;
+  }
+}
+  </script>
+</body>
+</html>
