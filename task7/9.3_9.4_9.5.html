@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		#elem{
+			width: 2000px;
+			height: 2200px;
+			border: 1px solid red;
+		}
+	</style>											
+</head>
+<body>
+	<!-- 9.3 -->
+	<input type="submit" value="Переместить на X 300 Y 500" onclick="window.scrollTo(300, 500)">
+	<!-- 9.4 -->
+	<input type="submit" value="Опустить на 300px" onclick="window.scrollBy(0, 300)">
+	<!-- 9.5 -->
+	<input type="submit" value="В самый низ" onclick="window.scrollBy(0, pageMax)">
+
+	<div id="elem"></div>
+	<script type="text/javascript">
+		var pageMax = document.body.clientHeight;
+	</script>
+
+</body>
+</html>
