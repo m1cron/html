@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		#slides {
+    position: relative;
+    height: 300px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+ 
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+ 
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+ 
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+	</style>
+</head>
+<body>
+	<ul id="slides">
+    <li class="slide showing"><img src="bird_pumpkin_halloween_21563.png" alt=""></li>
+    <li class="slide"><img src="crown_king_queen_icon_161518.png" alt=""></li>
+    <li class="slide"><img src="queen_pumpkin_halloween_21568.png" alt=""></li>
+    <li class="slide"><img src="queen-icon_31172.png" alt=""></li>
+    <li class="slide"><img src="bird_pumpkin_halloween_21563.png" alt=""></li>
+</ul>
+	<script type="text/javascript">
+		var slides = document.querySelectorAll('#slides .slide');
+		var currentSlide = 0;
+		var slideInterval = setInterval(nextSlide,2000);
+ 
+		function nextSlide() {
+   			 slides[currentSlide].className = 'slide';
+    		currentSlide = (currentSlide+1)%slides.length;
+    		slides[currentSlide].className = 'slide showing';
+		}
+	</script>
+</body>
+</html>			

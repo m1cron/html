@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p id="apis">0</p>
+	<button onclick="FF()">Нажми,чтобы начался отчет</button>
+	<script type="text/javascript">
+		let app =0;
+		function FF(){
+			window.setInterval(timer, 100);
+		}
+		function timer(){
+			let ap = document.getElementById('apis');
+			app++;
+			ap.innerHTML = app;
+		}
+	</script>
+</body>
+</html>
