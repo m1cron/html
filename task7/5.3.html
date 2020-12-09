@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		div{
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+	<div><input type="text" value=""  onkeyup="stop(this)" id="ass"></div>
+	<div><p id="inaa">a</p></div>
+	<script type="text/javascript">
+		
+		function stop(elem){
+			 
+			var text = document.getElementById('inaa');
+			text.innerHTML = elem.value;
+			
+		}
+	</script>
+</body>
+</html>

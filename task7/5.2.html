@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		div{
+			display: inline-block;
+		}
+		button{
+			display: block;
+			margin-left: 90px;
+		}
+	</style>
+</head>
+<body>
+		<div><input type="text" value="" id="api">
+		<div><p>+</p></div>
+		<div><input type="text" value="" id="api2"></div>
+		<div>=</div>
+		<div><p id="Sum">0</p></div>
+		<button onclick="FFF()">Нажми меня,чтобы сложить</button>
+	
+		<script type="text/javascript">
+			function FFF(){
+				let Sum = document.getElementById("Sum");
+				let x1 =document.getElementById("api").value;
+				let x2 =document.getElementById("api2").value;
+				Sum.innerHTML=+x1+ +x2;
+			}
+		</script>
+</body>
+</html>
