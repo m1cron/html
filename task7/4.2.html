@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<button onclick="FF()">Я должен исчезнуть</button>
+	<button onclick="GG()">Нажми и я появлюсь</button>
+	<input type="text" value="Нажми на кнопку." id="api">
+	<script type="text/javascript">
+		function FF(){
+			document.getElementById("api").style.display = 'none';
+		}
+		function GG(){
+			document.getElementById("api").style.display = 'inline';
+		}
+	</script>
+</body>
+</html>		
