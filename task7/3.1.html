@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>731</title>
+	<style>
+		input {
+			width: 400px;
+		}
+	</style>
+	<script>
+		function go(elem){
+			elem.value = 'Текст был изменен';
+		}
+		function stop(elem){
+			elem.value = 'Нажми на меня!';
+		}
+	</script>
+</head>
+<body>
+	<input type="text" value="Нажми на меня!" onfocus="go(this)" onblur="stop(this)">
+</body>
+</html>

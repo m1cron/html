@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<button onclick="One(this)" id="onee">Выключить</button>
+	<button onclick="Two()">Включить</button>
+	<script type="text/javascript">
+		//this.disabled=true;
+		function One(pr){
+			pr.disabled=true;
+			
+		}
+		function Two(){
+			document.getElementById("onee").disabled=false;
+			
+		}
+	</script>
+</body>
+</html>
