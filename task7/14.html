@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<fieldset id="contents">
+  <legend>#contents</legend>
+  <p>
+    Хочешь посетить этот сайт  <a href="">ТЫ ТОЧНО ХОЧЕШЬ НА МЕНЯ НАЖАТЬ ?</a> или посетить <a href=""><i>МЕНЯ</i></a>
+  </p>
+  <script type="text/javascript">
+  	contents.addEventListener('click', function(e) {
+  if ( e.target.closest('a') ) {
+    let targetA = confirm('Хотите покинуть страницу?');
+    return targetA ? true : e.preventDefault();
+  }
+})
+  </script>
+</fieldset>
+</body>
+</html>
